@@ -9,15 +9,11 @@ function changeTheme() {
   const selectedTheme = themeSelector.value;  
 
   if (selectedTheme === "dark") {
-    body.classList.add("dark");           // Add dark mode
+    body.classList.add("dark");           
   } else {
-    body.classList.remove("dark");        // Remove dark mode
+    body.classList.remove("dark");        
   }
 
- 
-  logo.src = selectedTheme === "dark" 
-    ? "byui-logo_white.webp" 
-    : "byui-logo_blue.webp";
 }
 
 
