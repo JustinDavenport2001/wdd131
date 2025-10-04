@@ -1,0 +1,157 @@
+/* 1️⃣ Import fonts and define CSS variables */
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: 'Mooli', sans-serif;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav.open {
+  display: flex;
+}
+
+
+/* 2️⃣ Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  color: var(--text-dark);
+  background-color: var(--text-light);
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+img {
+  max-width: 100%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: solid white 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Header / Nav */
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: none; 
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--text-light);
+  padding: 0.5rem;
+}
+
+/* Menu Button */
+#menu-button {
+  background: none;
+  border: 2px solid var(--text-light);
+  color: var(--text-light);
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+#menu-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+/* Main & Gallery */
+main {
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens */
+@media (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1000px) {
+  header {
+    flex-direction: row;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
