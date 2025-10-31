@@ -1,0 +1,181 @@
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main Container */
+main {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* Form */
+.credit-card-form {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Card Container */
+.card-container {
+  position: relative;
+  width: 340px;
+  height: auto;
+  perspective: 1000px;
+  display: grid;
+  gap: 1rem;
+}
+
+/* Card Front & Back */
+.card-front,
+.card-back {
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  backface-visibility: hidden;
+  display: grid;
+  gap: 12px;
+  max-height: 200px;
+}
+
+/* Card Front */
+.card-front {
+  background-color: #d6e3f3;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* Card Back */
+.card-back {
+  background-color: #c0cad0;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Card Logo */
+.card-image {
+  width: 55px;
+  justify-self: start;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+/* Card Number */
+#card-number {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-name {
+    
+}
+
+/* Cardholder + Expiration */
+.exp-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.exp-container input {
+  width: 48%;
+  text-align: center;
+}
+
+/* Card Back Elements */
+.card-back {
+  display: grid;
+  gap: 8px;
+}
+
+.magstripe {
+  background: #333;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Signature input */
+#signature {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+
+/* Submit Button */
+button {
+  justify-self: center;
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0074D9;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  main {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .exp-container input {
+    width: 45%;
+  }
+}
