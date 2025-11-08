@@ -106,10 +106,6 @@ input {
   font-weight: bold;
 }
 
-.card-name {
-    
-}
-
 /* Cardholder + Expiration */
 .exp-container {
   display: flex;
