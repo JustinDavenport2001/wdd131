@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Recipe Book — Simple &amp; Responsive</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="A small responsive recipe book example built for WDD 131 practice — accessible, SEO-friendly, and uses Flexbox."
+    />
+    <meta name="author" content="Justin Davenport" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <meta property="og:title" content="Recipe Book — Quick Recipes" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Browse quick and easy recipes. Responsive and accessible demo for WDD 131."
+    />
+    <meta property="og:image" content="images/recipe-share.jpg" />
+    <meta
+      property="og:url"
+      content="https://yourusername.github.io/wdd131/recipes/index.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="recipes.css" />
+
+    <link rel="modulepreload" href="recipes.mjs" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="branding">
+          <img
+            src="images/recipe-book.png"
+            alt="Recipe Book logo"
+            class="logo"
+            width="48"
+            height="48"
+          />
+          <h1 class="site-title">Recipe Book</h1>
+
+    </header>
+
+    <main id="main" class="container" role="main">
+      <section class="hero" aria-label="Site introduction">
+        
+      </section>
+
+      <section class="controls">
+        <form
+          id="searchForm"
+          class="search"
+          role="search"
+          aria-label="Search recipes"
+        >
+          <label for="searchInput" class="visually-hidden"
+            >Search recipes</label
+          >
+          <input
+            id="searchInput"
+            name="q"
+            type="search"
+            placeholder="Search recipes or ingredients"
+          />
+          <button type="submit" aria-label="Search">Search</button>
+        </form>
+      </section>
+
+      <section id="recipes" class="recipes" aria-label="Recipes list">
+        <article class="recipe-card">
+          <img
+            src="images/apple-crisp.jpg"
+            alt="Fresh bowl of apple crisp with vanilla ice cream on top"
+            class="recipe-image"
+          />
+          <div class="recipe-body">
+            <h3 class="recipe-title">Apple Crisp</h3>
+            <p class="meta">Dessert</p>
+
+            <span
+              class="rating"
+              role="img"
+              aria-label="Rating: 4 out of 5 stars"
+            >
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star">⭐</span>
+              <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+
+            <p class="description">
+              This apple crisp recipe is a simple yet delicious fall dessert
+              that's great served warm with vanilla ice cream.
+            </p>
+
+            <div class="tags">
+              <span class="tag">dessert</span>
+              <span class="tag">easy</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p class="copyright">© 2025 Justin Davenport</p>
+
+        <div class="social" aria-label="Social media links">
+          <a href="#" aria-label="Instagram"
+            ><img src="images/instagram_icon.svg" alt="instagram icon"
+          /></a>
+          <a href="#" aria-label="YouTube"
+            ><img src="images/youtube_icon.svg" alt="youtube icon"
+          /></a>
+          <a href="#" aria-label="Pinterest"
+            ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+          /></a>
+        </div>
+
+        <p class="attribution">
+          <small style="font-size: 0.6em">
+            <a
+              href="https://www.flaticon.com/free-icons/recipe"
+              title="recipe icons"
+              >Recipe icons created by Freepik - Flaticon</a
+            >
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
