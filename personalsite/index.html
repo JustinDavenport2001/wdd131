@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trail & Camp Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Trail & Camp Finder</h1>
+      <p>By Justin Davenport</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="hikes.html">Hikes</a>
+      <a href="index.html#comments">Comments</a>
+    </nav>
+
+    <main>
+      <!-- HOME PAGE -->
+      <section id="home" class="section">
+        <h2 class="page-title">Welcome to Trail & Camp Finder</h2>
+        <p>
+          Finding the perfect spot for your next adventure shouldn’t be
+          stressful. This site helps you discover reliable camping areas and
+          great hiking trails, all recommended by people who love the outdoors
+          just as much as you do.
+        </p>
+
+        <h3>Explore New Places</h3>
+        <p>
+          Browse through a growing list of camping spots and hikes. Each
+          location includes quick details like difficulty, distance, scenery,
+          and tips from other hikers.
+        </p>
+
+        <h3>Share Your Experience</h3>
+        <p>
+          Your feedback helps other adventurers. Use the comment form to leave a
+          review or share something useful you noticed on the trail or at the
+          campsite.
+        </p>
+      </section>
+
+      <!-- PLACES PAGE -->
+      <section id="places" class="section">
+        <h2 class="page-title">Places to Explore</h2>
+
+        <p>
+          Browse a list of trails and campsites. Each entry includes basic info
+          such as location, difficulty, and terrain. You can also add new places
+          using the form below.
+        </p>
+
+        <div class="location-list">
+          <h3>Current Places</h3>
+          <ul id="placeList">
+            <li>Example Trail – Easy, scenic river path</li>
+            <li>Bear Creek Campsite – Quiet forest camping area</li>
+          </ul>
+        </div>
+
+        <h3>Add a New Place</h3>
+        <form id="addPlaceForm">
+          <label>Location Name:</label><br />
+          <input type="text" id="placeName" required /><br /><br />
+
+          <label>Type:</label><br />
+          <select id="placeType">
+            <option value="Hike">Hike</option>
+            <option value="Campsite">Campsite</option></select
+          ><br /><br />
+
+          <label>Description:</label><br />
+          <textarea id="placeDesc" required></textarea><br /><br />
+
+          <button type="submit">Add Location</button>
+        </form>
+      </section>
+
+      <!-- COMMENTS PAGE -->
+      <section id="comments" class="section">
+        <h2 class="page-title">Comments & Reviews</h2>
+
+        <p>
+          See what other hikers and campers are saying. Share your own tips or
+          experiences.
+        </p>
+
+        <div class="comment-list">
+          <h3>Recent Comments</h3>
+          <ul id="commentList">
+            <li>“Amazing views at Example Trail! Highly recommend.”</li>
+          </ul>
+        </div>
+
+        <h3>Leave a Comment</h3>
+        <form id="commentForm">
+          <label>Your Name:</label><br />
+          <input type="text" id="commentName" required /><br /><br />
+
+          <label>Your Comment:</label><br />
+          <textarea id="commentText" required></textarea><br /><br />
+
+          <button type="submit">Submit Comment</button>
+        </form>
+      </section>
+    </main>
+
+<!-- Link the JS file for hikes -->
+<script src="main.js"></script>
+</body>
+</html>
+
+
+    <footer>© 2024 Trail & Camp Finder — Justin Davenport</footer>
+  </body>
+</html>

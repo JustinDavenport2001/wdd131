@@ -1,0 +1,170 @@
+/* =========================
+   Base Styling
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #E9F1ED;
+    color: #2F2F2F;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+    background: #3C6E47;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background: #2F2F2F;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.15rem;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #7CAEC7;
+}
+
+/* =========================
+   Layout
+========================= */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.page-title {
+    color: #3C6E47;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   Lists + Boxes
+========================= */
+.location-list, .comment-list {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.location-list ul,
+.comment-list ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.location-list li,
+.comment-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.location-list li:last-child,
+.comment-list li:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   Forms
+========================= */
+form {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #3C6E47;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #F8FFFC;
+}
+
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+button {
+    background: #3C6E47;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #295133;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    background: #2F2F2F;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.hike-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hike-card {
+    padding: 15px;
+    background: #e7f4ee;
+    border-left: 5px solid #2e6d37;
+    border-radius: 6px;
+}
